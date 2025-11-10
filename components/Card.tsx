@@ -24,10 +24,9 @@ const cardVariants = {
     scale: 1,
     rotateX: 0,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 120,
       damping: 20,
-      duration: 0.8,
     },
   },
 };
@@ -88,7 +87,7 @@ export default function Card({
             ? {
                 y: -8,
                 scale: 1.02,
-                transition: { type: "spring", stiffness: 400, damping: 25 },
+                transition: { type: "spring" as const, stiffness: 400, damping: 25 },
               }
             : {}
         }
