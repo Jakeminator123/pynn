@@ -13,6 +13,7 @@ export default function Header() {
     { name: "For Startups", href: "/for-startups" },
     { name: "For Clients", href: "/for-clients" },
     { name: "Blog", href: "/blog" },
+    { name: "For Devs", href: "/for-devs" },
   ];
 
   return (
@@ -62,7 +63,11 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="text-base font-bold text-white drop-shadow-lg transition-all duration-300 relative focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent rounded-xl px-6 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 hover:scale-105"
+                  className={`text-base font-bold drop-shadow-lg transition-all duration-300 relative focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent rounded-xl px-6 py-3 backdrop-blur-sm border hover:scale-105 ${
+                    item.name === "For Devs"
+                      ? "text-white bg-red-500/30 hover:bg-red-500/40 border-red-300/50 hover:border-red-300/70 focus:ring-red-300/50"
+                      : "text-white bg-white/10 hover:bg-white/20 border-white/20 hover:border-white/40 focus:ring-white/50"
+                  }`}
                   onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
@@ -154,7 +159,11 @@ export default function Header() {
                   >
                     <Link
                       href={item.href}
-                      className="block rounded-xl px-4 py-3 text-base font-bold text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent"
+                      className={`block rounded-xl px-4 py-3 text-base font-bold backdrop-blur-sm border transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent ${
+                        item.name === "For Devs"
+                          ? "text-white bg-red-500/30 hover:bg-red-500/40 border-red-300/50 hover:border-red-300/70 focus:ring-red-300/50"
+                          : "text-white bg-white/10 hover:bg-white/20 border-white/20 hover:border-white/40 focus:ring-white/50"
+                      }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}

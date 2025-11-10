@@ -27,28 +27,27 @@ function Model({ mousePosition }: { mousePosition: { x: number; y: number } }) {
     }
 
     // Calculate target rotation based on mouse position
-    // Increased slightly from 0.08/0.12 to 0.12/0.18 for a bit more movement
-    targetRotation.current.x = -mousePosition.y * 0.12;
-    targetRotation.current.y = mousePosition.x * 0.18;
+    // Increased multipliers for more responsive movement
+    targetRotation.current.x = -mousePosition.y * 0.25;
+    targetRotation.current.y = mousePosition.x * 0.3;
     // Add Z rotation (roll) based on diagonal mouse movement
-    targetRotation.current.z = mousePosition.x * mousePosition.y * 0.1;
+    targetRotation.current.z = mousePosition.x * mousePosition.y * 0.15;
 
-    // Slightly faster interpolation for more responsive movement
-    // Changed from 0.02 to 0.03
+    // Faster interpolation for more responsive movement
     modelRef.current.rotation.x = THREE.MathUtils.lerp(
       modelRef.current.rotation.x,
       targetRotation.current.x,
-      0.03
+      0.06
     );
     modelRef.current.rotation.y = THREE.MathUtils.lerp(
       modelRef.current.rotation.y,
       targetRotation.current.y,
-      0.03
+      0.06
     );
     modelRef.current.rotation.z = THREE.MathUtils.lerp(
       modelRef.current.rotation.z,
       targetRotation.current.z,
-      0.03
+      0.06
     );
 
     // Very gentle floating animation
@@ -91,10 +90,10 @@ export default function Logo3D({
       const rawX = (e.clientX / window.innerWidth) * 2 - 1;
       const rawY = -(e.clientY / window.innerHeight) * 2 + 1;
 
-      // Apply deadzone - only react if mouse is far from center
-      const deadzone = 0.3;
-      const x = Math.abs(rawX) > deadzone ? rawX * 0.5 : rawX * 0.2;
-      const y = Math.abs(rawY) > deadzone ? rawY * 0.5 : rawY * 0.2;
+      // Reduced deadzone and increased sensitivity for more responsive movement
+      const deadzone = 0.15;
+      const x = Math.abs(rawX) > deadzone ? rawX * 0.8 : rawX * 0.5;
+      const y = Math.abs(rawY) > deadzone ? rawY * 0.8 : rawY * 0.5;
 
       setMousePosition({ x, y });
     };
