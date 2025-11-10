@@ -33,7 +33,10 @@ export default function Testimonials() {
               transition={{ delay: index * 0.1, duration: 0.6 }}
             >
               <div className="flex items-center gap-4 mb-5">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 flex items-center justify-center text-2xl flex-shrink-0 shadow-lg" aria-hidden="true">
+                <div
+                  className="w-14 h-14 rounded-full bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 flex items-center justify-center text-2xl flex-shrink-0 shadow-lg"
+                  aria-hidden="true"
+                >
                   {testimonial.avatar}
                 </div>
                 <div className="flex-1">
@@ -49,7 +52,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-white/90 leading-relaxed text-base md:text-lg">
-                "{testimonial.content}"
+                &quot;{testimonial.content}&quot;
               </blockquote>
             </motion.article>
           ))}
@@ -58,4 +61,3 @@ export default function Testimonials() {
     </Section>
   );
 }
-
