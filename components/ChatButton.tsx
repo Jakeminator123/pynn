@@ -9,9 +9,7 @@ export default function ChatButton() {
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-    // Here you can integrate with your chatbot service
-    // For example: window.open('your-chatbot-url', '_blank');
-    console.log("Chat opened");
+    // Chat integration can be added here
   };
 
   return (
@@ -37,7 +35,7 @@ export default function ChatButton() {
         )}
       </AnimatePresence>
 
-      {/* Chat window placeholder - you can replace this with your actual chat component */}
+      {/* Chat window */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

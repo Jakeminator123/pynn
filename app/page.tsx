@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { siteContent } from "@/lib/content";
 import StructuredData from "@/components/StructuredData";
 import Card from "@/components/Card";
@@ -279,16 +278,6 @@ export default function HomePage() {
       </Section>
       {/* Chat Button */}
       <ChatButton />
-
-      {/* Dev Button - Remove before production */}
-      <div className="fixed bottom-4 left-4 z-50">
-        <Link
-          href="/for-devs"
-          className="inline-block px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all text-sm"
-        >
-          For Devs
-        </Link>
-      </div>
     </>
   );
 }

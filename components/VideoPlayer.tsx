@@ -91,7 +91,10 @@ export default function VideoPlayer({
 
     if (!document.fullscreenElement) {
       video.requestFullscreen().catch((err) => {
-        console.error("Error attempting to enable fullscreen:", err);
+        // Silently handle fullscreen errors in production
+        if (process.env.NODE_ENV === 'development') {
+          console.error("Error attempting to enable fullscreen:", err);
+        }
       });
     } else {
       document.exitFullscreen();

@@ -55,3 +55,11 @@ next-env.d.ts
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Development/documentation files
+/old-site/
+/question_ansver.txt
+/ah/
+/output/
+/3D_LOGO_SETUP.md
+*.code-workspace
