@@ -1,0 +1,65 @@
+# Create the email as a downloadable text file
+content = """Subject: Pynn × FrejFund — SWOT, resourcing, and valuation view
+
+Hi everyone,
+
+This opportunity is a bit of a puzzle—where 1 + 2 can become 4, while 2 − 1 becomes 0. Here’s how I see it:
+
+— PYNN —
+Strengths
+- Established and more developed customer relationships and base; recognized credibility with clients
+- Solid industry experience
+
+Weaknesses
+- The website is not as advanced as the customer base
+
+Opportunities
+- Accelerate and leverage the customer base amid rapid technical change
+
+Risks
+- Being overtaken at a time when the market price of code has been compressed
+
+— FrejFund —
+Strengths
+- Low costs and rapid iteration
+- No sunk costs or exit barriers
+- Strong coding expertise
+
+Weaknesses
+- Website less developed
+- No existing customer base
+- Less overall experience
+
+Opportunities
+- Accelerate by gaining leverage from an existing customer base
+- Benefit from the exponential progress in AI
+
+Risks
+- Uncompensated time
+
+— Jakob & Christoffer —
+Our reference salaries are SEK 50,000/month for me (my current salary is SEK 52,000) and SEK 40,000–55,000/month for Christoffer. We primarily want to code. I currently work ~65 hours/week, with ~15 hours pro bono because I’m deeply committed—the same goes for Christoffer. In domains we know well, we estimate we are roughly 4–6× as effective as more experienced developers; we perform less well on very large projects, highly intricate technical detail, and/or when joining complex existing codebases.
+
+We are prepared to contribute significant time—even without immediate compensation—provided the baseline terms are fair. I can reduce my current workload to ~40 hours and allocate ~15 hours per week (or per the best joint roadmap with Pynn), and I’m confident Christoffer is aligned.
+
+Capability match
+Broadly, I see similar gaps and therefore good rationale for a match—we may need added experience and contacts. That said, we believe we can contribute materially across large parts of your product. This is stated with respect for areas where experience will be important. Networks, strategies, and tactics we bring also matter.
+
+Method & objectivity
+I’ve tried to be as objective as possible, acknowledging perfect impartiality isn’t feasible. I asked large language models (LLMs) to analyze both your and our technical platforms, factoring in what I’ve outlined (experience, customer base, etc.). I also asked two developer colleagues at promethius.com and coinpoker.com—where I currently consult—to review the sites. Their assessments did not price in external factors.
+
+I have also reviewed your own valuation of Pynn; I’d be happy to go through it together with some financial context. I created an interactive matrix (attached) for discussion.
+
+Valuation view
+My best estimate is that the total value of FrejFund is approximately 20% of the value of Pynnai.com.
+
+Best regards,
+Jakob Eberg
+0739 55 80 87
+"""
+
+path = "/mnt/data/Pynn_FrejFund_email_EN.txt"
+with open(path, "w", encoding="utf-8") as f:
+    f.write(content)
+
+path

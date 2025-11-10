@@ -1,0 +1,274 @@
+{
+  "company_profile": {
+    "domain": "pynnai.com",
+    "industry": "Innovation intelligence / ekosystemplattform (B2B SaaS)",
+    "offerings": [
+      "Centraliserad plattform för Europas tidiga innovations- och finansieringslandskap",
+      "Synlighet mot hundratals investerare i Europa",
+      "White‑label för investerare, inkubatorer, acceleratorer, företag, myndigheter, universitet, event och venture builders",
+      "Deal flow‑bedömning, pipelinestyrning och portföljuppföljning",
+      "Datarumshantering och portföljsupport",
+      "Tillgång till event, tjänster, verktyg och innovationspartners baserat på bransch och fas"
+    ],
+    "value_props": [
+      "En plattform som kopplar ihop Europas tidiga innovations‑ekosystem",
+      "Ansök på fem minuter och bli synlig för investerare",
+      "White‑label som gör att olika aktörer kan arbeta i samma infrastruktur",
+      "Gör allt på ett ställe: från deal flow till portfölj och datarum"
+    ],
+    "target_customers": [
+      "investerare",
+      "inkubatorer",
+      "acceleratorer",
+      "corporates",
+      "myndigheter",
+      "universitet",
+      "eventarrangörer",
+      "venture builders",
+      "startups"
+    ],
+    "stage_guess": "Pre‑seed/Seed (indikerar kapitalrunda om €250k i oktober 2025)",
+    "geography": [
+      "Europa"
+    ]
+  },
+  "audit_scores": {
+    "seo": 2,
+    "technical_seo": 2,
+    "ux": 3,
+    "ia": 2,
+    "content": 3,
+    "performance": 5,
+    "accessibility": 2
+  },
+  "strengths": [
+    "Tydlig H1 och problemformulering kring EU‑fragmentering; stark kontext för värdeerbjudandet.",
+    "Laserfokus på europeiskt ekosystem – tydlig differentiering mot globala databaser.",
+    "White‑label‑erbjudande som adresserar flera målgrupper (investerare, inkubatorer m.fl.).",
+    "Kort och friktionsreducerande löfte (“Ansök på fem minuter”) som kan bli en stark CTA när den implementeras korrekt.",
+    "Minimalistiskt innehåll och få resurser kan ge snabb laddning efter optimering."
+  ],
+  "issues": [
+    "Saknar meta description; titel är generisk (“Pynn - Innovation Intelligence”) och fångar inte sökintention.",
+    "Open Graph/Twitter‑taggar saknas, vilket ger dålig delningsförhandsvisning.",
+    "Teckenkodningsfel (“â‚¬” i stället för “€”); tyder på fel charset/encoding.",
+    "Endast en sida identifierad och inga H2/H3; svag semantisk struktur för SEO och skannbarhet.",
+    "Navigation (header/footer) saknas enligt crawl; försvårar informationsarkitektur och användarflöden.",
+    "Primär CTA saknas eller är inte klickbar i snapshot; risk för låg konvertering.",
+    "Brist på kontaktuppgifter (e‑post/telefon/sociala länkar) minskar trovärdighet och E‑E‑A‑T.",
+    "Alt‑texter saknas på bilder (logotypen saknar alt); påverkar tillgänglighet och bild‑SEO.",
+    "Ingen strukturerad data (Organization, Website, Product) hittades; sämre rikare sökresultat.",
+    "Oklar målgruppsprioritering på startsidan (flera målgrupper nämns men utan dedikerade sidor).",
+    "Ingen synlig sitemap/robots/canonical i snapshot; risk för crawlbarhetsproblem.",
+    "Extern Google Font utan preconnect/preload; potentiellt onödig render‑blocking.",
+    "Juridik saknas (Privacy/Cookies/Terms) vilket påverkar förtroende och efterlevnad.",
+    "Inget bevis/social proof (kundloggor, case, citat) – svårare att konvertera B2B‑målgrupper.",
+    "Kapitallandningsinformation (“October 2025: €250k...”) blandas med kundbudskap; bör separeras till investerarsida."
+  ],
+  "improvements": {
+    "quick_wins": [
+      {
+        "item": "Rätta teckenkodning till UTF‑8",
+        "impact": "high",
+        "effort": "low",
+        "why": "Felaktiga tecken (â‚¬) skadar förtroende och läsbarhet.",
+        "how": "Lägg till <meta charset=\"UTF-8\"> högst upp i <head> och säkerställ serverns Content‑Type header är UTF‑8."
+      },
+      {
+        "item": "Skriv unik meta description (140–160 tecken)",
+        "impact": "high",
+        "effort": "low",
+        "why": "Ökar CTR från SERP och tydliggör värdeerbjudandet.",
+        "how": "Ex: “Pynn kopplar ihop Europas tidiga innovation – ansök på 5 min, nå investerare, hantera deal flow och portfölj i en white‑label‑plattform.”"
+      },
+      {
+        "item": "Förbättra sidtitel med primära nyckelord",
+        "impact": "high",
+        "effort": "low",
+        "why": "Titel väger tungt för ranking och CTR.",
+        "how": "Ex: “Pynn | Innovation Intelligence‑plattform för Europas startups, investerare & acceleratorer”."
+      },
+      {
+        "item": "Lägg till OG/Twitter‑taggar",
+        "impact": "medium",
+        "effort": "low",
+        "why": "Kontrollerar hur sidan ser ut vid delning och kan driva referral‑trafik.",
+        "how": "Implementera og:title, og:description, og:image (1200x630), twitter:card m.fl."
+      },
+      {
+        "item": "Inför primär CTA‑knapp överst",
+        "impact": "high",
+        "effort": "low",
+        "why": "Tydlig väg till konvertering saknas.",
+        "how": "Placera “Ansök nu” som knapp som leder till ett kort formulär eller sign‑up."
+      },
+      {
+        "item": "Lägg till kontakt & trust‑element",
+        "impact": "high",
+        "effort": "low",
+        "why": "B2B‑målgrupper kräver trovärdighet.",
+        "how": "Footer med e‑post (hello@), LinkedIn, och länkar till Integritetspolicy/Cookiepolicy/Villkor."
+      },
+      {
+        "item": "Strukturera innehåll med H2/H3",
+        "impact": "medium",
+        "effort": "low",
+        "why": "Förbättrar skannbarhet och sökbarhet.",
+        "how": "Bryt ned värdeerbjudande, målgrupper, funktioner och use cases i tydliga sektioner."
+      },
+      {
+        "item": "Alt‑texter på bilder",
+        "impact": "medium",
+        "effort": "low",
+        "why": "Tillgänglighet och bild‑SEO.",
+        "how": "Beskriv logotyp och eventuella illustrationer kort och informativt."
+      },
+      {
+        "item": "Sitemap.xml, robots.txt och canonical",
+        "impact": "high",
+        "effort": "low",
+        "why": "Säker crawlning och undvik dubbletter.",
+        "how": "Generera sitemap, tillåt relevanta paths, sätt canonical till https://www.pynnai.com/."
+      },
+      {
+        "item": "Strukturerad data (Organization/Website/Product)",
+        "impact": "medium",
+        "effort": "low",
+        "why": "Möjlighet till rikare resultat och bättre entitetsförståelse.",
+        "how": "Lägg in JSON‑LD med logotyp, kontakt, sociala profiler och produktfunktioner/prissättning om tillämpligt."
+      },
+      {
+        "item": "Preconnect/preload och lokalt hostade fonter",
+        "impact": "medium",
+        "effort": "medium",
+        "why": "Minskar render‑blocking och förbättrar LCP.",
+        "how": "Self‑host Montserrat, använd rel=preconnect till font‑origin och font‑display:swap."
+      },
+      {
+        "item": "Separera investerarinformation till egen sida",
+        "impact": "medium",
+        "effort": "low",
+        "why": "Minskar brus för primär målgrupp och förbättrar relevans.",
+        "how": "Skapa /investors med villkor (t.ex. min ticket €25k) och behåll kundbudskap på startsidan."
+      },
+      {
+        "item": "Installera mätning och händelsespårning",
+        "impact": "high",
+        "effort": "low",
+        "why": "Måste kunna mäta konvertering och läckage.",
+        "how": "Implementera analytics och events för ‘Apply’, ‘Contact’, scroll‑depth, hero‑CTA m.fl."
+      }
+    ],
+    "roadmap": [
+      {
+        "item": "Informationsarkitektur och navigering (0–4 veckor)",
+        "why": "Saknad IA hämmar SEO, UX och skalbarhet.",
+        "how": "Inför huvudmeny: Lösning, För vem (Investerare/Inkubatorer/Acceleratorer/Myndigheter/Universitet/Corporates), Pris, Case, Resurser/Blogg, Kontakt."
+      },
+      {
+        "item": "Segment‑ och use‑case‑sidor (4–8 veckor)",
+        "why": "Bättre relevans och Quality Score för både SEO och annonser.",
+        "how": "Skapa dedikerade landningssidor per målgrupp med problem→lösning, features, proof och CTA."
+      },
+      {
+        "item": "Programmatisk SEO: landningssidor per land/bransch (6–12 veckor)",
+        "why": "Efterfrågan varierar per EU‑land och vertikal.",
+        "how": "Generera sidor som “Innovation funding i [land]” och “Deal flow för [bransch]” med intern länkning och hreflang."
+      },
+      {
+        "item": "Case studies & social proof (8–12 veckor)",
+        "why": "B2B‑beslut kräver bevis.",
+        "how": "Publicera 3–5 case med kvantitativa resultat, citat och processbeskrivning."
+      },
+      {
+        "item": "Konverteringsoptimerad ansökningsflöde (8–10 veckor)",
+        "why": "Nuvarande CTA saknas/är otydlig.",
+        "how": "Multi‑stegsformulär med progress, autofyll, validering; A/B‑test av copy och friktion."
+      },
+      {
+        "item": "Strukturerad data i skala (10–14 veckor)",
+        "why": "Förbättrar entitetskoppling och CTR.",
+        "how": "Utöka JSON‑LD med FAQ på landningssidor, BreadcrumbList och Product/SoftwareApplication där relevant."
+      },
+      {
+        "item": "Prestandabudget och kontinuerlig optimering (löpande)",
+        "why": "Stabil Core Web Vitals påverkar ranking och UX.",
+        "how": "Sätt LCP <2.5s, CLS <0.1; lazy‑load, komprimera bilder, minifiera CSS/JS, cache‑policy och CDN."
+      },
+      {
+        "item": "Internationalisering (hreflang) (12–18 veckor)",
+        "why": "EU‑fokus kräver språk/geospecifika signaler.",
+        "how": "Starta med EN + DE/FR/ES; implementera hreflang och landsspecifika sidor."
+      },
+      {
+        "item": "MarTech/CRM‑koppling",
+        "why": "Måste kvalificera och vårda leads.",
+        "how": "Synka formulär till CRM, scoringslogik, lead‑nurture och rapporter per segment/land."
+      },
+      {
+        "item": "Länkförvärv och partnersamarbeten",
+        "why": "Auktoritet är avgörande i konkurrens mot etablerade databaser.",
+        "how": "Samarbeten med inkubatorer/acceleratorer och universitetsnätverk, guest posts, event‑sponsring och kataloglistningar."
+      }
+    ]
+  },
+  "projected_impact": {
+    "traffic_uplift_pct_range": [
+      40,
+      100
+    ],
+    "conv_rate_uplift_pct_range": [
+      50,
+      100
+    ],
+    "monthly_revenue_uplift_estimate": {
+      "low": 36960,
+      "high": 100800,
+      "currency": "SEK",
+      "assumptions": {
+        "baseline_sessions": 800,
+        "current_conv_rate": 0.007,
+        "avg_order_value": 6000.0
+      }
+    }
+  },
+  "competitor_hints": [
+    {
+      "name": "Dealroom",
+      "url": "https://dealroom.co"
+    },
+    {
+      "name": "Crunchbase",
+      "url": "https://www.crunchbase.com"
+    },
+    {
+      "name": "Vestbee",
+      "url": "https://www.vestbee.com"
+    },
+    {
+      "name": "F6S",
+      "url": "https://www.f6s.com"
+    },
+    {
+      "name": "Gust",
+      "url": "https://gust.com"
+    }
+  ],
+  "benchmarks_sources": [],
+  "pitch": {
+    "headline": "Bygg en sök‑ och konverteringsklar plattform för Europas innovation – snabbt.",
+    "summary": "Pynn har en skarp positionering men faller på grundläggande SEO/UX‑brister: saknade metataggar, fel teckenkodning, ingen navigation/CTA och noll strukturerad data. En lättviktig IA, vassa landningssidor per målgrupp/land och ett tydligt ansökningsflöde kan fördubbla både trafik och konvertering inom 3–6 månader.",
+    "next_steps": [
+      "Vecka 1–2: Rätta encoding, titel/description, OG/Twitter, CTA och kontakt/trust i footer.",
+      "Vecka 3–4: Inför navigation och skapa 3–5 segment‑sidor (Investerare, Inkubatorer, Acceleratorer, Myndigheter, Universitet).",
+      "Månad 2–3: Lansera 10–15 land/bransch‑landningssidor, lägg in Organization/Website/Product‑schema, aktivera mätning och mål.",
+      "Månad 3–4: Publicera 3 case studies, starta länkprogram via partnernätverk och testa betalda kampanjer mot topp‑sidor."
+    ]
+  },
+  "cost": {
+    "sek": 0.0,
+    "usd": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

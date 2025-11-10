@@ -1,0 +1,172 @@
+# AngelHive & Pynn AI — Traffic, Positioning, and Growth Playbook
+
+*(Prepared for Jakob — 25 Sep 2025, Europe/Madrid)*
+
+## Executive summary (TL;DR)
+
+* **AngelHive** is a marketplace for founders and angels that **runs on** **Pynn AI**, which is the underlying **multi-tenant, white-label platform**. AngelHive explicitly promotes Pynn as its automation/assessment engine, and Pynn, in turn, routes core flows to the AngelHive app. ([AngelHive][1])
+* **White-label? Yes.** Pynn markets itself as a **white-label platform**, exposes a **“Create your Startup Platform”** flow that provisions subdomains like `*.pynn.ai`, and we can see active tenants (e.g., `womeninvestinwomen.pynn.ai`, `wolverventures.pynn.ai`). AngelHive is effectively one branded instance on this stack. ([pynn.ai][2])
+* **Why the low traffic today:** tiny indexed footprint (few public pages, little/no blog/resources), brand-name collision with **angelhive.vc**, split UX between marketing and app domains, and minimal authority signals (press/backlinks). These factors constrain Google visibility. ([AngelHive][3])
+* **Benchmark:** Category leaders like **PitchBook** win on *content scale + proprietary data + distribution*. They’re clocking \~**3.2M monthly visits** and >\$**618M** 2024 revenue inside Morningstar—fuel for brand demand and SEO. ([Similarweb][4])
+* **What to do now:** Fix brand/IA issues, ship 50–100 SEO landing pages (programmatic + editorial), publish **data-led reports** quarterly, convert white-label tenants into **indexable directories**, and earn authoritative links via research PR. Concrete 30/60/90 below.
+
+---
+
+## 1) What’s the relationship between AngelHive and Pynn AI?
+
+* **On AngelHive’s homepage**: “Introducing Pynn AI” as the automated reporting/assessment tool that powers due diligence. ([AngelHive][1])
+* **On AngelHive’s investor page**: “Visit Pynn AI and get access to your own **White Label** version.” ([AngelHive][5])
+* **On Pynn’s site**: Pynn positions itself as “**a white-label platform**” for investors/accelerators/etc., with CTAs that point to **app.angelhive.io** (shared app). ([pynn.ai][2])
+* **Provisioning flow**: `angelhive.pynn.ai/new-tenant` lets anyone spin up a branded tenant (`subdomain.pynn.ai`). Live tenants include **Women Invest in Women** and **Wolver Ventures** on `pynn.ai` subdomains. ([angelhive.pynn.ai][6])
+* **Third-party confirmation**: Local press and interviews state AngelHive runs on Pynn AI, both built by **Max Ventures** (Mallorca). ([Humans of Mallorca][7])
+
+**Conclusion:** *AngelHive is a marketplace/brand built on Pynn’s white-label SaaS. Pynn is the platform; AngelHive is a flagship tenant/instance.*
+
+---
+
+## 2) Current web footprint & likely reasons for low traffic
+
+**Signals from public crawlable pages**
+
+* AngelHive has a **small set of public pages** (home, features, investor, publication terms, LinkedIn data policy, privacy/terms). There’s an empty “Uncategorised” blog category—i.e., **no content engine** yet. ([AngelHive][3])
+* Core flows and the sample report live behind the **app** or PDFs—good for conversion, not for search. ([app.angelhive.io][8])
+* Pynn’s “Apply/Try” buttons **route into app.angelhive.io**, diluting Pynn’s own indexable footprint and creating **brand/IA ambiguity** for Google. ([pynn.ai][2])
+
+**Brand collision**
+
+* **angelhive.vc** (women-investing network, US-based) competes for your *brand* query “AngelHive/Angel Hive,” potentially outranking/splitting intent—classic brand SERP cannibalization. ([angelhive.vc][9])
+
+**Authority & distribution**
+
+* Limited third-party coverage/backlinks so far (a handful of posts/listings and 2024 launch PR). This starves you of the authority needed to rank for non-branded searches. ([Yahoo Finance][10])
+
+**Net:** Minimal content + brand ambiguity + thin authority ⇒ **low discoverability** for both AngelHive and Pynn.
+
+---
+
+## 3) Is AngelHive a **white-label** solution?
+
+**Yes.** The investor page invites users to “get your own **White Label** version” via Pynn, and the platform exposes a **tenant creator** for `*.pynn.ai` subdomains used by partners. ([AngelHive][5])
+
+---
+
+## 4) How does AngelHive perform on Google right now?
+
+* **Brand SERP risk:** Queries like “Angelhive” surface **angelhive.vc** alongside/above **angelhive.io**, muddying relevance and trust. This alone can cut brand-keyword CTR materially. ([angelhive.vc][9])
+* **Topical coverage:** Most indexable pages are sales pages; **no research hub**, **no glossary**, **no directory pages**, **no case studies**—so you won’t rank for investor/founder problem searches (e.g., due diligence templates, readiness checklists, investor lists by country). ([AngelHive][3])
+
+---
+
+## 5) What would improve traffic (prioritized, concrete)
+
+### A) Fix the **brand & IA** issues (Week 1–2)
+
+1. **Own the brand query**
+
+   * Add “**AngelHive AI**” in titles/H1s and metadata site-wide; create a **/about/brand** explainer that differentiates from **angelhive.vc**; add structured data (Organization, Website, SameAs). ([AngelHive][1])
+2. **Unify app and marketing**
+
+   * Ensure **canonical** from app marketing pages to the **www/marketing** equivalents. On **pynn.ai**, switch CTAs from `app.angelhive.io` to a neutral `app.pynn.ai` (or at least set rel=canonical/UTM discipline) to make ownership clear to crawlers. ([pynn.ai][2])
+
+### B) Ship an **SEO base layer** (Days 1–30)
+
+3. **Programmatic pages (50–100 to start)**
+
+   * “Startup assessment in {Country/Vertical}”, “Investor readiness checklist for {Stage/Model}”, “Angel networks in {City/Country}”, “Accelerator directory: {Region}”.
+   * Each page should include your **scoring rubric** snippets and a CTA to generate a free mini-report. (Use your existing methodology content.) ([AngelHive][3])
+4. **Editorial hub (8–12 long-form guides/Q)**
+
+   * Topics: *How to pass investor due diligence*, *Seed metrics benchmarks in Europe*, *How angels evaluate founding teams*, *Term sheet basics*, etc. Link internally to the programmatic pages. ([AngelHive][1])
+5. **Schema & basics**
+
+   * Add `SoftwareApplication` schema for the assessment tool, `Product` for report SKUs (€19), `FAQPage` where relevant, plus org/site schema. ([AngelHive][1])
+
+### C) Turn the white-label network into **SEO fuel** (Days 30–60)
+
+6. **Indexable tenant directories**
+
+   * Give each tenant an indexable **/partners/{tenant}** page on **angelhive.io** and **pynn.ai** with unique content (who they serve, featured startups, events). Link out to their `*.pynn.ai` subdomain; ask tenants to link back (“Powered by Pynn/Angelhive”) to build **authority**. ([angelhive.pynn.ai][6])
+7. **Case studies**
+
+   * “How {Tenant} cut diligence time by 70% using Pynn/AngelHive reports” (include sample report snippets). ([AngelHive][11])
+
+### D) Own a repeatable **Data PR** asset (Days 45–90)
+
+8. **Quarterly “EU Early-Stage Pulse”** (free PDF + interactive page)
+
+   * Aggregate anonymized data from assessments (team backgrounds, traction ranges, common gaps). This earns **citations/links** from tech press & ecosystem blogs. (PitchBook wins here at massive scale.) ([PitchBook][12])
+9. **Event tie-ins**
+
+   * Publish ranking lists around demo days, and syndicate through local media (BAM/Mallorca, regional accelerators) and LinkedIn to seed backlinks. ([Majorca Daily Bulletin][13])
+
+### E) Distribution beyond Google (ongoing)
+
+10. **LinkedIn distribution**
+
+* Route every new report, tenant launch, and benchmark stat to founders/investors where you already post. Expand beyond posts to **carousels + doc uploads** for engagement. ([LinkedIn][14])
+
+11. **Directory coverage**
+
+* Claim/expand profiles on Tracxn/ThatRound/AngelList-style directories; keep data fresh to capture brand searches and referral traffic. ([Tracxn][15])
+
+---
+
+## 6) How the leaders win: PitchBook as a benchmark
+
+* **Massive demand + authority:** \~**3.2M** monthly visits, with deep page engagement (8 ppv, \~33% bounce). Their site is a giant library of market pages, reports, case studies, and press. ([Similarweb][4])
+* **A data moat turned content engine:** PitchBook’s proprietary database underpins new products and constant **research PR**, making them highly link-worthy and giving compounding organic reach. ([PitchBook][12])
+* **Revenue & scale reinforce brand search:** 2024 **revenue \$618.4M** (+12% YoY) and ongoing growth in 2025 users—more customers, more branded queries, more references. ([Q4 Investor Relations][16])
+
+**Takeaway:** You won’t out-spend PitchBook, but you can **out-focus**: own the niche of **early-stage European due-diligence** with repeatable data assets, smart programmatic pages, and tenant-powered distribution.
+
+---
+
+## 7) Risks to address
+
+* **Brand confusion** (“AngelHive” vs **angelhive.vc**): clarify naming and metadata to reduce leakage on brand queries. ([angelhive.vc][9])
+* **Compliance messaging** (e.g., LinkedIn data usage policy): keep the policy visible and lawful to pre-empt trust concerns among investors/founders. ([AngelHive][17])
+
+---
+
+## 8) KPI & instrumentation checklist
+
+* Enable **Google Search Console** on both domains; monitor brand vs non-brand impressions, index coverage, and sitelinks.
+* Track **tenant referral** traffic and backlinks; publish a **partner badge** to standardize anchor/attribution.
+* Monitor **AI-assisted discovery** (ChatGPT/Perplexity citations/traffic) using Similarweb’s **AI Chatbot Traffic** reports as visibility grows. ([support.similarweb.com][18])
+
+---
+
+## Appendix — Key evidence
+
+* AngelHive’s site, with explicit Pynn AI references and limited content footprint. ([AngelHive][1])
+* Pynn AI positions as a **white-label** platform; flows into the **AngelHive app**. ([pynn.ai][2])
+* White-label provisioning & live tenant subdomains on `pynn.ai`. ([angelhive.pynn.ai][6])
+* External validation: AngelHive runs on Pynn AI by Max Ventures; launch PR and local media. ([Humans of Mallorca][7])
+* PitchBook traffic and financial scale for context. ([Similarweb][4])
+
+---
+
+### 90-day outcome to aim for
+
+* **From \~invisible → visible:** 50–100 pages indexed, first 3–5 **.edu/.gov/press** links from Data PR, >20% of traffic from **non-branded** queries, and a **clean brand SERP** where AngelHive dominates “angelhive” searches over **angelhive.vc**. ([angelhive.vc][9])
+
+If you want, I can turn the plan above into a **Jira-ready backlog** (issues with acceptance criteria and owners) and a **content calendar** for the first 12 weeks.
+
+[1]: https://angelhive.io/ "AngelHive - Raise Funds, Faster"
+[2]: https://pynn.ai/ "Pynn - Innovation Intelligence"
+[3]: https://angelhive.io/features/?utm_source=chatgpt.com "Features"
+[4]: https://www.similarweb.com/website/pitchbook.com/?utm_source=chatgpt.com "pitchbook.com Website Analysis for August 2025"
+[5]: https://angelhive.io/investor/?utm_source=chatgpt.com "Investor"
+[6]: https://angelhive.pynn.ai/new-tenant?utm_source=chatgpt.com "Create Your Startup Platform"
+[7]: https://humansofmallorca.com/tech-entrepreneur-toni-grunwald-we-are-looking-for-business-ideas-that-can-scale-enormously/?utm_source=chatgpt.com "Tech Entrepreneur Toni Grunwald: 'We are looking for ..."
+[8]: https://app.angelhive.io/?utm_source=chatgpt.com "Log in | AngelHive - AI-Powered Evaluation Reports"
+[9]: https://www.angelhive.vc/?utm_source=chatgpt.com "Angel Hive"
+[10]: https://finance.yahoo.com/news/angelhive-takes-choosing-early-stage-131700066.html?utm_source=chatgpt.com "AngelHive Takes The Work Out Of Choosing An Early-Stage ..."
+[11]: https://angelhive.io/wp-content/uploads/2024/11/Example-Report-EventMatch-AI-AngelHive.pdf?utm_source=chatgpt.com "Startup Analysis Report"
+[12]: https://pitchbook.com/media/press-releases/pitchbook-strengthens-leadership-in-global-capital-market-data-coverage?utm_source=chatgpt.com "PitchBook Strengthens Leadership in Global Capital ..."
+[13]: https://www.majorcadailybulletin.com/holiday/life-style/2025/03/14/131785/business-angels-mallorca-launches-connect-global-investors-with-local-startups.html?utm_source=chatgpt.com "Business Angels Mallorca launches to connect global ..."
+[14]: https://www.linkedin.com/posts/angelhive_angelhive-ai-powered-evaluation-reports-activity-7333498741875773440-kIVK?utm_source=chatgpt.com "AngelHive's Post - AI-Powered Evaluation Reports"
+[15]: https://tracxn.com/d/companies/angelhive/___hXOZgocPs3B_Ytg1Fhu9_eVPXDxCnB1ubXyfSsfkVY?utm_source=chatgpt.com "AngelHive - 2025 Company Profile & Team"
+[16]: https://s21.q4cdn.com/198919461/files/doc_financials/2024/ar/2024-Morningstar-Annual-Report.pdf?utm_source=chatgpt.com "2024 - Annual Report Morningstar, Inc."
+[17]: https://angelhive.io/linkedin-data-usage-policy/?utm_source=chatgpt.com "LinkedIn Data Usage Policy"
+[18]: https://support.similarweb.com/hc/en-us/articles/26004678126493-AI-Chatbot-Traffic?utm_source=chatgpt.com "AI Chatbot Traffic"
