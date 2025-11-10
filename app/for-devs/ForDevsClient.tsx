@@ -571,8 +571,7 @@ export default function ForDevsClient() {
         {/* Footer */}
         <div className="mt-12 text-center text-gray-600">
           <p className="text-sm">
-            This page is for development/testing purposes only. Remove before
-            production launch.
+            Technical documentation for developers and stakeholders.
           </p>
         </div>
       </div>

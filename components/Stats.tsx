@@ -32,8 +32,8 @@ export default function Stats() {
                     ? 'border-green-200/50 hover:border-green-300/70 hover:shadow-xl hover:shadow-green-100/30'
                     : 'border-blue-200/50 hover:border-blue-300/80 hover:shadow-xl hover:shadow-blue-100/30'
                 }`}>
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
+                  <div className="flex flex-col">
+                    <div className="mb-4">
                       <div className={`text-5xl md:text-6xl lg:text-7xl font-black leading-none ${
                         isFirst
                           ? 'bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent'
@@ -44,7 +44,7 @@ export default function Stats() {
                         {stat.value}
                       </div>
                     </div>
-                    <div className="flex-1 min-w-0 pt-1">
+                    <div className="flex-1">
                       <div className="text-base md:text-lg font-bold text-slate-900 mb-1.5 leading-tight">
                         {stat.label}
                       </div>

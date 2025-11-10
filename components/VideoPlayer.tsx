@@ -156,9 +156,9 @@ export default function VideoPlayer({
           />
         )}
 
-        {/* Loading state */}
-        {!isLoaded && !hasError && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-900/30 to-indigo-900/30 rounded-2xl min-h-[300px] pointer-events-none">
+        {/* Loading state - only show before video starts playing */}
+        {!isLoaded && !hasError && !isPlaying && (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-900/30 to-indigo-900/30 rounded-2xl min-h-[300px] pointer-events-none z-10">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>
           </div>
         )}
